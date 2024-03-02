@@ -9,7 +9,7 @@ import MainButton from "../../components/MainButton";
 import CustomBanner from "../../components/CustomBanner";
 import { POSTS, UPLOADS_URL } from "../../config/constants/api";
 import { Get } from "../../config/api"
-import ReactHtmlParser from "react-html-parser";
+import ReactHtmlParser from "html-react-parser";
 
 //react-paginate imports
 import ReactPaginate from "react-paginate";

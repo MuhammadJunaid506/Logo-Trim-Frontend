@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { UserOutlined } from '@ant-design/icons';
 import { Avatar, Col, Divider, Form, Input, Row, Spin, Typography, message } from "antd";
 import { Image } from "antd";
-import ReactHtmlParser from "react-html-parser";
+import ReactHtmlParser from "html-react-parser";
 import moment from "moment"
 import { LoadingOutlined } from '@ant-design/icons';
 import ClientLayout from '../../components/ClientLayout';
@@ -149,9 +149,9 @@ const SingleBlog = () => {
                                 <Image preview={false} alt={"Failed to load image"} src={post.post?.image ? `${UPLOADS_URL}/${post.post?.image}` : "/images/default.jpg"} style={{ objectFit: "cover", marginTop: 35 }} />
                             </Col>
                             <Col >
-                                <div style={{ marginTop: 35, textAlign: "justify" }}>
+                                {/*<div style={{ marginTop: 35, textAlign: "justify" }}>
                                     {ReactHtmlParser(post.post?.content)}
-                                </div>
+                                </div>*/}
                                 <Divider />
                                 {/* <Row style={{ justifyContent: "center" }} gutter={24}>
                                     <FaFacebookF style={{ fontSize: 38, marginLeft: 10, color: "white", background: "#365493", padding: "7px 0", borderRadius: 25 }} />
